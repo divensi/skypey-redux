@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import store from './store';
 
 const fancyLog = () => {
-  console.log("%c Rendered with 👉 👉👇", "background: purple; color: #FFF");
+  console.log("%c State da aplicação no momento 👉 👉👇", "background: purple; color: #FFF");
   console.log(store.getState());
 }
 

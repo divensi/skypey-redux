@@ -8,14 +8,14 @@ const Empty = ({ user }) => {
 
   return (
     <div className="Empty">
-      <h1 className="Empty__name">Welcome, {first_name}</h1>
+      <h1 className="Empty__name">Bem Vindo, {first_name}</h1>
       <img src={profile_pic} alt={name} className="Empty__img" />
       <p className="">
         <b>Status:</b> {status}
       </p>
-      <button className="Empty__btn">Start a conversation</button>
+      <button className="Empty__btn">Iniciar uma conversa</button>
       <p className="Empty__info">
-        Search for someone to start chatting with or go to Contacts to see who is available
+        Clique em uma pessoa para iniciar o chat com ela
       </p>
     </div>
   )
