@@ -1,0 +1,34 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "nodemon",
+      "runtimeExecutable": "nodemon",
+      // "program": "${workspaceFolder}/app.js",
+      "restart": true,
+      "runtimeArgs": [
+        "start",
+        "--inspect=5858"
+      ],
+      "protocol": "inspector",
+      "port": 5858,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "name": "Launch localhost",
+      "type": "firefox",
+      "request": "launch","firefoxArgs": [
+        "--start-debugger-server"
+      ],
+      "reAttach": true,
+      "url": "http://localhost/index.html",
+      "webRoot": "${workspaceFolder}"
+  }
+  ]
+}
